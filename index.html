@@ -1,0 +1,48 @@
+<html lang="it">
+  <head>
+    <title>Cuppe e' morto</title>
+  </head>
+  <style>
+    body {
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  background: #161616;
+  overflow: hidden;
+  color: white;
+}
+
+.spinner {
+  width: 200px;
+  height: 200px;
+  background: #f5dad8;
+  border-radius: 50%;
+  overflow: hidden;
+  animation: spin 6s linear infinite;
+}
+
+img {
+  display: block;
+  width: 100%;
+  animation: bounce 0.2s linear infinite alternate;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(-1turn);
+  }
+}
+
+@keyframes bounce {
+  to {
+    translate: 0 20px;
+  }
+}
+  </style>
+  <body>
+    <div class="spinner">
+      <img src="https://codetheworld.io/wp-content/uploads/2024/05/pedro.png">
+    </div>
+  </body>
+</html>
